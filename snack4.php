@@ -1,5 +1,9 @@
 <?php
 
+$numeriCasuali = [];
+
+$numeriRandom = rand(1 , 100)
+
 
 
 ?>
@@ -14,6 +18,21 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+
+    echo $numeriRandom;
+
+    $numeriPushati = array_push($numeriCasuali , $numeriRandom);
+
+    for($numeriRandom = 0 ; $numeriRandom < 15 ; $numeriRandom++ );{
+        var_dump($numeriCasuali);
+    };
+
+    
+
+    
+?>
     
 </body>
 </html>
