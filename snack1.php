@@ -44,66 +44,40 @@ $partite = [
 </head>
 <body>
 
-<p> 
-    <?php
-     echo $partite[0]['casa']
-    ?> -
-    <?php
-     echo $partite[0]['opsite']
-    ?> | 
-    <?php
-     echo $partite[0]['punti_casa']
-    ?>
-    -
-    <?php
-     echo $partite[0]['punti_opsite']
-    ?>
-</p>
-<p> 
-    <?php
-     echo $partite[1]['casa']
-    ?> -
-    <?php
-     echo $partite[1]['opsite']
-    ?> | 
-    <?php
-     echo $partite[1]['punti_casa']
-    ?>
-    -
-    <?php
-     echo $partite[1]['punti_opsite']
-    ?>
-</p>
-<p> 
-    <?php
-     echo $partite[2]['casa']
-    ?> -
-    <?php
-     echo $partite[2]['opsite']
-    ?> | 
-    <?php
-     echo $partite[2]['punti_casa']
-    ?>
-    -
-    <?php
-     echo $partite[2]['punti_opsite']
-    ?>
-</p>
-<p> 
-    <?php
-     echo $partite[3]['casa']
-    ?> -
-    <?php
-     echo $partite[3]['opsite']
-    ?> | 
-    <?php
-     echo $partite[3]['punti_casa']
-    ?>
-    -
-    <?php
-     echo $partite[3]['punti_opsite']
-    ?>
-</p>
+
+
+
+<ul>
+
+<?php
+    for($i = 0; $i < count($partite); $i++){
+        ?>
+            <li>
+            <?php
+                echo $partite[$i]['casa'];
+                ?>
+                 - 
+                 <?php
+                 echo $partite[$i]['opsite'];
+                 ?>
+                  | 
+                  <?php
+                  echo $partite[$i]['punti_casa'];
+                  ?>
+                   - 
+                   <?php
+                   echo $partite[$i]['punti_opsite'];
+            ?>
+            </li>
+        <?php
+    };
+?>
+    
+
+    
+</ul>
+
+
     
 </body>
 </html>

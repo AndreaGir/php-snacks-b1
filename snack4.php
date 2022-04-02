@@ -2,7 +2,9 @@
 
 $numeriCasuali = [];
 
-$numeriRandom = rand(1 , 100)
+$numeriRandom = rand(1 , 100);
+
+$numeriRandom2 = rand(1 , 100);
 
 
 
@@ -24,8 +26,15 @@ $numeriRandom = rand(1 , 100)
     echo $numeriRandom;
 
     $numeriPushati = array_push($numeriCasuali , $numeriRandom);
+    
 
-    for($numeriRandom = 0 ; $numeriRandom < 15 ; $numeriRandom++ );{
+    for($numeriPushati = 0 ; $numeriPushati < 15 ; $numeriPushati++ ){
+        if($numeriPushati == $numeriRandom){
+            array_push($numeriCasuali , $numeriRandom2);
+        }else{
+
+        }
+        
         var_dump($numeriCasuali);
     };
 

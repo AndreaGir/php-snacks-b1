@@ -52,77 +52,32 @@ $post = [
 </head>
 <body>
 
-<h1>10/01/2019</h1>
+<?php
+    foreach($post as $key => $value){
+        echo $key;
+        foreach($value as $dato){
+            foreach($dato as $carta){
+                ?>
+                <p>
+                <?php   
+                echo $carta;
+                ?>
+                </p>
+                <?php
+            }
+                
+            
+        
+        };
+        
+    };
+    ?>
+    
 
-<p> 
-    <?php
-        echo $post['10/01/2019'][0]['title']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/01/2019'][0]['author']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/01/2019'][0]['text']
-    ?>
-</p>
 
-<h1>10/01/2019</h1>
 
-<p> 
-    <?php
-        echo $post['10/01/2019'][1]['title']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/01/2019'][1]['author']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/01/2019'][1]['text']
-    ?>
-</p>
 
-<h1>10/02/2019</h1>
 
-<p> 
-    <?php
-        echo $post['10/02/2019'][0]['title']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/02/2019'][0]['author']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['10/02/2019'][0]['text']
-    ?>
-</p>
-
-<h1>15/05/2019</h1>
-
-<p> 
-    <?php
-        echo $post['15/05/2019'][0]['title']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['15/05/2019'][0]['author']
-    ?>
-</p>
-<p>
-    <?php
-        echo $post['15/05/2019'][0]['text']
-    ?>
-</p>
     
 </body>
 </html>
